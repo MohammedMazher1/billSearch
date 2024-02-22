@@ -107,6 +107,6 @@ class UserController extends Controller
         }catch (Exception $e) {
             return back()->with("error", "لم تتم عملية الحذف");
          }
-         return redirect()->route("users");
+         return redirect()->route("users.index");
     }
 }

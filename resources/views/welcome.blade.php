@@ -6,7 +6,7 @@
             <img src="{{ asset('assets/img/logo.png') }}" alt="">
         </div>
     
-        <a href="{{ route('billSearch') }}">
+        <a href="{{ route('billSearch') }}" class="btn_hover">
             إبداء
         </a>
     </div>   

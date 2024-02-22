@@ -24,19 +24,21 @@
                     <td>{{ $user->user_name }}</td>
                     <td class="controlpanel">
                         <div>
-                            <form id="editForm" action="{{Route('users.edit',$user['id'])}}" method="GET">
-                                <i class="fa-regular fa-pen-to-square" onclick="document.getElementById('editForm').submit()"></i>
+                            <form id="deleteUserForm_{{ $user->id }}" action="{{ Route('users.destroy',$user['id']) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                    <i class="fa-solid fa-trash" onclick="document.getElementById('deleteUserForm_{{ $user->id }}').submit()"></i>
                             </form>
                         </div>
                         <div>
-                            <form action="{{ Route('users.destroy', $user->id) }}" method="POST">
-                                <i class="fa-solid fa-trash"></i>
-                            </form>
+                            <a href="{{ Route('users.edit',$user->id)}}">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                            </a>
                         </div>
+                        
                     </td>
                 </tr>
             @endforeach
-
             {{-- <tr class="odd">
                 <td>محمد مزهر عمر بافرج</td>
                 <td>مدير</td>
@@ -46,7 +48,6 @@
                     <div><i class="fa-regular fa-pen-to-square"></i></div>
                 </td>
             </tr> --}}
-
         </table>
     </div>
 @endsection

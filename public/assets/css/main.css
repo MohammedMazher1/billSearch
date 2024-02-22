@@ -9,10 +9,12 @@
     box-sizing: border-box;
     font-family: var(--font-header);
 }
-a{
+
+a {
     text-decoration: none;
 }
-.errorDiv{
+
+.errorDiv {
     display: flex;
     background-color: rgba(238, 31, 31, 0.596);
     justify-content: center;
@@ -22,8 +24,9 @@ a{
     font-size: 1rem;
     color: white;
     margin: 5px;
-    border-radius: 30px 30px 0 ;
+    border-radius: 30px 30px 0;
 }
+
 /*#region Variable */
 
 :root {
@@ -97,6 +100,11 @@ body {
 
 .header .logo img {
     width: 80px;
+    transition: all 0.7s ease;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
 }
 
 .header .container .loginBtn {
@@ -152,7 +160,9 @@ main.main .container {
     border-radius: 20px;
     color: var(--primary-color);
     text-decoration: none;
+    transition: all 0.5s ease;
 }
+
 
 /*#region Footer*/
 .footer {
@@ -342,6 +352,12 @@ table tr.tableHeader {
     border-radius: 2px;
     color: #fff;
     opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.controlpanel div a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .controlpanel div:hover {
@@ -431,7 +447,7 @@ table tr.tableHeader {
 
 .upload {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-auto-flow: dense;
     gap: 15px;
@@ -460,7 +476,8 @@ table tr.tableHeader {
 .upload div input[type='file'] {
     display: none;
 }
-.billupload  button{
+
+.billupload button {
     border: none;
     background-color: var(--main--color);
     padding: 10px 20px;
@@ -470,6 +487,7 @@ table tr.tableHeader {
     cursor: pointer;
     border-radius: 5px;
 }
+
 .upload div i {
     font-size: 4rem;
     color: var(--main--color);
@@ -494,20 +512,217 @@ table tr.tableHeader {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    transition: all 0.5s ease ;
+    transition: all 0.5s ease;
+}
+/* normalize css file */
+/*************************************************************************************************************************************************************/
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+body {
+    margin: 0;
 }
 
 
-/* .upload div input::placeholder{
-    opacity: 0.3;
-    color: gray;
-    font-size: 14px;
-} */
-/*#dark and light*/
-/* .dark_light{
-    font-size: 30px;
-    margin-right: 20px;
+main {
+    display: block;
 }
-.dark_light:hover{
-    color: var(--font-color);
-} */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
