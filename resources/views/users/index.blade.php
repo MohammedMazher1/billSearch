@@ -30,7 +30,7 @@
                         </div>
                         <div>
                             <form action="{{ Route('users.destroy', $user->id) }}" method="POST">
-                                <i class="fa-solid fa-trash"></i>
+                                <i class="fa-solid fa-trash deleteIcon"></i>
                             </form>
                         </div>
                     </td>
