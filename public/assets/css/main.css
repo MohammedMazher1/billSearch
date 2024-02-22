@@ -9,7 +9,21 @@
     box-sizing: border-box;
     font-family: var(--font-header);
 }
-
+a{
+    text-decoration: none;
+}
+.errorDiv{
+    display: flex;
+    background-color: rgba(238, 31, 31, 0.596);
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 10px 25px;
+    font-size: 1rem;
+    color: white;
+    margin: 5px;
+    border-radius: 30px 30px 0 ;
+}
 /*#region Variable */
 
 :root {
@@ -101,6 +115,7 @@ body {
     background-color: #eee !important;
     color: var(--main--color) !important;
     border: 1px solid var(--main--color) !important;
+    cursor: pointer;
 }
 
 /*#end Header*/
@@ -137,7 +152,6 @@ main.main .container {
     border-radius: 20px;
     color: var(--primary-color);
     text-decoration: none;
-    cursor: pointer;
 }
 
 /*#region Footer*/
@@ -386,15 +400,17 @@ table tr.tableHeader {
     flex-direction: row;
 }
 
-.userIfo .control a {
+.userIfo .control button {
     padding: 10px 30px;
     color: var(--primary-color);
     border-radius: 5px;
     text-decoration: none;
     background-color: var(--main--color);
+    border: none;
+    transition: all 0.5s ease;
 }
 
-.userIfo .control a:last-child {
+.userIfo .control button:last-child {
     background-color: brown;
 }
 
@@ -464,6 +480,23 @@ table tr.tableHeader {
 .upload div i:hover {
     color: #eee;
 }
+
+/** back to home icon style **/
+.backToHome {
+    margin: auto;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--main--color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all 0.5s ease ;
+}
+
 
 /* .upload div input::placeholder{
     opacity: 0.3;

@@ -19,7 +19,7 @@
     <header class="header">
       <div class="container">
           <a title="nothing" href="#" class="logo">
-            <img src="assets/img/logo.png" alt="">
+            <img src="{{ asset('assets/img/logo.png') }}" alt="">
           </a>
           <a class="loginBtn btn_hover">
             تسحيل الدخول

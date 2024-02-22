@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,16 +24,8 @@ route::get('billSearch', function () {
 route::get('dashbord', function () {
     return view('admin.dashbord');
 })->name('dashbord');
-
-Route::get('users', function () {
-    return view('users.index');
-});
-Route::get('create', function () {
-    return view('users.create');
-});
-Route::get('edite', function () {
-    return view('users.edite');
-});
 Route::get('upload', function () {
     return view('bill.billUpload');
 });
+
+Route::resource('users',UserController::class); 

@@ -1,0 +1,111 @@
+@font-face {
+    font-family:'mainFont';
+    src: url(../fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-header);
+}
+
+/*#region Variable */
+
+:root{
+    --main--color:#13168F;
+    --primary-color:#eee;
+}
+body {
+    font-family:mainFont;
+    background-color: white;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+/* small*/
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium*/
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large*/
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header {
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.384);
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: black;
+    height: 80px;
+}
+
+.header .logo img{
+    width: 80px;
+}
+.header .container .loginBtn{
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--main--color);
+    padding: 8px 20px;
+    color: var(--primary-color);
+    border-radius: 30px;
+}
+/*#end Header*/
+main.main{
+    height: calc(100vh - 100px);
+    /* height: 100vh; */
+}
+
+/*#region Footer*/
+.footer{
+    background-color: var(--main--color);
+    color: var(--primary-color);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer div{
+    margin: auto;
+    text-align: center;
+
+}
+
+
+/*#dark and light*/
+/* .dark_light{
+    font-size: 30px;
+    margin-right: 20px;
+}
+.dark_light:hover{
+    color: var(--font-color);
+} */
