@@ -4,7 +4,7 @@
     <div class="search">
         <input type="text" name="search" placeholder="أدخل رقم الفاتورة">
         <button>
-            <i class="fa-solid fa-rotate-right"></i>
+            <i class="fa-solid fa-rotate"></i>
         </button>
     </div>
     <table cellspacing=0 >
