@@ -2,7 +2,7 @@
 @section('content')
     <div class="billSearch content">
         <div class="search">
-            <input id="searchInput" type="text" name="search" placeholder="أدخل رقم الفاتورة">
+            <input id="searchInput" type="text" name="search" required placeholder="أدخل رقم الفاتورة">
             <button id="searchBtn">
                 <i class="fa-solid fa-rotate"></i>
             </button>
