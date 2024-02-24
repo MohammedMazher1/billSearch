@@ -2,12 +2,15 @@
 @section('content')
     <div class="billSearch content">
         <div class="search">
-            <input type="text" name="search" placeholder="أدخل رقم الفاتورة">
-            <button>
+            <input id="searchInput" type="text" name="search" placeholder="أدخل رقم الفاتورة">
+            <button id="searchBtn">
                 <i class="fa-solid fa-rotate"></i>
             </button>
         </div>
-        <table cellspacing=0>
+        <div class="errorDiv" id="searchError" style="display: none">
+
+        </div>
+        <table cellspacing=0 id="billTable">
             <tr class="odd tableHeader">
                 <th>رقم الدورة</th>
                 <th>رقم الاتفاقية</th>
@@ -19,15 +22,7 @@
             <tr class="even">
                 <td>25361425</td>
                 <td>المبغ المدفوع</td>
-                <td>محمد مزهر عمر</td>
-                <td>المبغ المدفوع</td>
-                <td>المبغ المدفوع</td>
-                <td>المبغ المدفوع</td>
-            </tr>
-            <tr class="odd">
-                <td>25361425</td>
-                <td>المبغ المدفوع</td>
-                <td>محمد مزهر عمر</td>
+                <td>أبراهيم غانم</td>
                 <td>المبغ المدفوع</td>
                 <td>المبغ المدفوع</td>
                 <td>المبغ المدفوع</td>

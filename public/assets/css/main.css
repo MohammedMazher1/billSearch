@@ -19,7 +19,6 @@ mark {
 a {
     text-decoration: none;
 }
-
 .errorDiv {
     display: flex;
     background-color: rgba(238, 31, 31, 0.596);
@@ -44,7 +43,6 @@ body {
     font-family: mainFont;
     background-color: white;
 }
-
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -84,7 +82,6 @@ body {
     }
 
 }
-
 .header {
     background-color: var(--primary-color);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.384);
@@ -94,7 +91,6 @@ body {
     width: 100%;
     height: 80px;
 }
-
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -103,16 +99,13 @@ body {
     color: black;
     height: 80px;
 }
-
 .header .logo img {
     width: 80px;
     transition: all 0.7s ease;
 }
-
 .header .logo img:hover {
     transform: scale(1.2);
 }
-
 .header .container .loginBtn {
     border: none;
     text-decoration: none;
@@ -124,7 +117,6 @@ body {
     cursor: pointer;
     transition: all 0.5s ease;
 }
-
 .btn_hover:hover {
     background-color: #eee !important;
     color: var(--main--color) !important;
@@ -133,7 +125,6 @@ body {
 }
 
 /*#end Header*/
-
 main.main {
     height: calc(100vh - 100px);
 }
@@ -158,7 +149,6 @@ main.main .container {
     height: 100%;
     flex-direction: column;
 }
-
 .mainContent a {
     display: inline-block;
     background-color: var(--main--color);
@@ -169,7 +159,6 @@ main.main .container {
     transition: all 0.5s ease;
 }
 
-
 /*#region Footer*/
 .footer {
     background-color: var(--main--color);
@@ -179,7 +168,6 @@ main.main .container {
     justify-content: center;
     align-items: center;
 }
-
 .footer div {
     margin: auto;
     text-align: center;
@@ -192,7 +180,6 @@ main.main .container {
     width: 80%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.137);
 }
-
 .billSearch .search {
     margin: auto;
     margin-bottom: 10px;
@@ -211,7 +198,6 @@ main.main .container {
 
     }
 }
-
 .billSearch .search input {
     padding: 5px;
     border: none;
@@ -219,7 +205,6 @@ main.main .container {
     outline: none;
 
 }
-
 .billSearch .search button {
     padding: 10px 15px;
     background-color: var(--main--color);
@@ -228,21 +213,13 @@ main.main .container {
     transition: all 0.5s ease;
     cursor: pointer;
 }
-
 .billSearch .search button i {
     font-size: 1rem;
 }
-
 .billSearch .search button:hover {
     background-color: white;
     color: var(--main--color);
 }
-
-.billSearch .search button:focus {
-    background-color: brown;
-    color: white;
-}
-
 .billSearch table {
     width: 100%;
     text-align: center;
@@ -279,7 +256,6 @@ table tr.tableHeader {
     flex-wrap: wrap;
     width: 100%;
 }
-
 .dashbord a {
     display: block;
     width: 350px;
@@ -295,17 +271,14 @@ table tr.tableHeader {
     flex-direction: column;
     transition: all 0.3s ease;
 }
-
 .dashbord a img {
     width: 100px;
     opacity: 0.5;
 }
-
 .dashbord a:first-child {
     background-color: var(--main--color);
     color: var(--primary-color);
 }
-
 .dashbord a:hover {
     background-color: #eee;
     color: var(--main--color);
@@ -317,7 +290,6 @@ table tr.tableHeader {
     width: 80%;
 
 }
-
 .content h3 {
     color: var(--main--color);
     font-size: 1.2rem;
@@ -326,7 +298,6 @@ table tr.tableHeader {
     background-color: #EEE;
     padding: 10px;
 }
-
 .mangeUsers .addUser {
     background-color: var(--main--color);
     color: var(--primary-color);
@@ -337,13 +308,11 @@ table tr.tableHeader {
     cursor: pointer;
     transition: all 0.5s ease;
 }
-
 .mangeUsers table {
     width: 100%;
     text-align: center;
 
 }
-
 .controlpanel {
     display: flex;
     gap: 3px;
@@ -352,7 +321,6 @@ table tr.tableHeader {
     font-size: 1rem;
     cursor: pointer;
 }
-
 .controlpanel div {
     padding: 5px 8px;
     border-radius: 2px;
@@ -360,21 +328,17 @@ table tr.tableHeader {
     opacity: 0.7;
     transition: all 0.3s ease;
 }
-
 .controlpanel div a {
     text-decoration: none;
     color: var(--primary-color);
 }
-
 .controlpanel div:hover {
     background-color: var(--main--color);
     opacity: 1;
 }
-
 .controlpanel div:first-child {
     background-color: brown;
 }
-
 .controlpanel div:last-child {
     background-color: var(--main--color);
 }
@@ -396,14 +360,12 @@ table tr.tableHeader {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
-
 .formInput {
     display: flex;
     flex-direction: column;
     gap: 10px;
 
 }
-
 .formInput input {
     padding: 10px;
     border-radius: 5px;
@@ -411,17 +373,14 @@ table tr.tableHeader {
     outline: none;
     background-color: #eee;
 }
-
 .userIfo div input::placeholder {
     opacity: 0.3;
     color: gray;
     font-size: 14px;
 }
-
 .userIfo .control {
     flex-direction: row;
 }
-
 .userIfo .control button {
     padding: 10px 30px;
     color: var(--primary-color);
@@ -431,11 +390,9 @@ table tr.tableHeader {
     border: none;
     transition: all 0.5s ease;
 }
-
 .userIfo .control button:last-child {
     background-color: brown;
 }
-
 .billupload {
     width: 80%;
 }
@@ -450,7 +407,6 @@ table tr.tableHeader {
         width: 100%;
     }
 }
-
 .upload {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -459,7 +415,6 @@ table tr.tableHeader {
     gap: 15px;
     margin-bottom: 15px;
 }
-
 .upload div {
     display: flex;
     flex-direction: column;
@@ -468,7 +423,6 @@ table tr.tableHeader {
     align-items: center;
 
 }
-
 .upload div input {
     padding: 10px;
     height: 40px;
@@ -478,11 +432,9 @@ table tr.tableHeader {
     width: 100%;
     background-color: #eee;
 }
-
 .upload div input[type='file'] {
     display: none;
 }
-
 .billupload button {
     border: none;
     background-color: var(--main--color);
@@ -493,14 +445,12 @@ table tr.tableHeader {
     cursor: pointer;
     border-radius: 5px;
 }
-
 .upload div i {
     font-size: 4rem;
     color: var(--main--color);
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
 .upload div i:hover {
     color: #eee;
 }
@@ -535,7 +485,6 @@ table tr.tableHeader {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.116);
     width: 300px;
 }
-
 .login .loginBtn {
     border: none;
     padding: 10px 15px;
@@ -547,7 +496,6 @@ table tr.tableHeader {
     width: 50%;
 
 }
-
 .login input {
     padding: 10px;
     border-radius: 5px;
