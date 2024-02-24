@@ -29,7 +29,7 @@ Route::get('upload', function () {
     return view('bill.billUpload');
 });
 
-Route::post('authenticate', [LoginController::class ,'authenticate'])->name('authenticate');
-Route::get('login', [LoginController::class ,'index'])->name('login');
-Route::get('logout', [LoginController::class ,'logout'])->name('logout');
-Route::resource('users',UserController::class); 
+Route::post('authenticate', [LoginController::class, 'authenticate'])->name('authenticate');
+Route::get('login', [LoginController::class, 'index'])->name('login');
+Route::get('logout', [LoginController::class, 'logout'])->name('logout');
+Route::resource('users', UserController::class);
