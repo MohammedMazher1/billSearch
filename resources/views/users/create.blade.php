@@ -18,19 +18,19 @@
             </h3>
             <div class="userIfo">
 
-                <div>
+                <div class="formInput">
                     <span>الاسم</span>
                     <input type="text" name="name" placeholder="اسم الامستخدم الرباعي">
                 </div>
-                <div>
+                <div class="formInput">
                     <span>نوع المستخدم</span>
                     <input type="text" name="type" placeholder="نوع المستخدم">
                 </div>
-                <div>
+                <div class="formInput">
                     <span>اسم المستخدم</span>
                     <input type="text" name="user_name" placeholder="Mo123_a">
                 </div>
-                <div>
+                <div class="formInput">
                     <span>كلمة المرور</span>
                     <input type="password" name="password" placeholder="*********">
                 </div>

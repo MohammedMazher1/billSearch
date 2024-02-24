@@ -18,19 +18,19 @@
             </h3>
             <div class="userIfo">
 
-                <div>
+                <div class="formInput">
                     <span>الاسم</span>
                     <input type="text" name="name" value="{{ $user->name }}">
                 </div>
-                <div>
+                <div class="formInput">
                     <span>نوع المستخدم</span>
                     <input type="text" name="type" value="{{ $user->type }}">
                 </div>
-                <div>
+                <div class="formInput">
                     <span>اسم المستخدم</span>
                     <input type="text" name="user_name" value="{{ $user->user_name }}">
                 </div>
-                <div>
+                <div class="formInput">
                     <span>كلمة المرور</span>
                     <input type="password" name="password">
                 </div>

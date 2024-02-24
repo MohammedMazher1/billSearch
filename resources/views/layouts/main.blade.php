@@ -11,15 +11,23 @@
     <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <a title="nothing" href="/" class="logo">
                 <img src="{{ asset('assets/img/logo.png') }}" alt="">
             </a>
-            <a class="loginBtn btn_hover">
-                تسحيل الدخول
-            </a>
+            @guest
+                <a class="loginBtn btn_hover" href="{{ route('login') }}">
+                    تسجيل الدخول
+                </a>
+            @else
+                <a class="loginBtn btn_hover" href="{{ route('logout') }}">
+                    تسجيل الخروج
+                </a>
+            @endguest
+
         </div>
     </header>
     <main class="main">

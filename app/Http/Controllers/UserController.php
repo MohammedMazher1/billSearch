@@ -44,6 +44,7 @@ class UserController extends Controller
 
         try{
             $userData = $request->only("name","password","type","user_name");
+            $userData['password'] = bcrypt($userData['password']);
             $user = User::create($userData);
         }catch (Exception $e) {
             return back()->with("error", "لم يتم تخزين البيانات");

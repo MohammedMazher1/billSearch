@@ -9,7 +9,9 @@
     box-sizing: border-box;
     font-family: var(--font-header);
 }
-
+mark{
+    font-size: 13px;width:fit-content;padding:5px;
+}
 a {
     text-decoration: none;
 }
@@ -391,14 +393,14 @@ table tr.tableHeader {
     }
 }
 
-.userIfo div {
+.formInput{
     display: flex;
     flex-direction: column;
     gap: 10px;
 
 }
 
-.userIfo div input {
+.formInput input {
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -514,6 +516,38 @@ table tr.tableHeader {
     margin-bottom: 10px;
     transition: all 0.5s ease;
 }
+/* login style */
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.116);
+    width: 300px;
+}
+.login .loginBtn{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--main--color);
+    color: #fff;
+    display: block;
+    margin: auto;
+    width: 50%;
+
+}
+.login input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+}
 /* normalize css file */
 /*************************************************************************************************************************************************************/
 html {
@@ -522,21 +556,16 @@ html {
     -webkit-text-size-adjust: 100%;
     /* 2 */
 }
-
 body {
     margin: 0;
 }
-
-
 main {
     display: block;
 }
-
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
-
 hr {
     box-sizing: content-box;
     /* 1 */
@@ -545,7 +574,6 @@ hr {
     overflow: visible;
     /* 2 */
 }
-
 pre {
     font-family: monospace, monospace;
     /* 1 */
@@ -556,7 +584,6 @@ pre {
 a {
     background-color: transparent;
 }
-
 abbr[title] {
     border-bottom: none;
     /* 1 */
@@ -565,12 +592,10 @@ abbr[title] {
     text-decoration: underline dotted;
     /* 2 */
 }
-
 b,
 strong {
     font-weight: bolder;
 }
-
 code,
 kbd,
 samp {
@@ -579,11 +604,9 @@ samp {
     font-size: 1em;
     /* 2 */
 }
-
 small {
     font-size: 80%;
 }
-
 sub,
 sup {
     font-size: 75%;
@@ -591,7 +614,6 @@ sup {
     position: relative;
     vertical-align: baseline;
 }
-
 sub {
     bottom: -0.25em;
 }
@@ -599,11 +621,9 @@ sub {
 sup {
     top: -0.5em;
 }
-
 img {
     border-style: none;
 }
-
 button,
 input,
 optgroup,
@@ -618,7 +638,6 @@ textarea {
     margin: 0;
     /* 2 */
 }
-
 button,
 input {
     /* 1 */
@@ -630,7 +649,6 @@ select {
     /* 1 */
     text-transform: none;
 }
-
 button,
 [type="button"],
 [type="reset"],

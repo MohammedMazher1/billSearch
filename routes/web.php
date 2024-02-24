@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,7 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 route::get('billSearch', function () {
     return view('bill.billSearch');
@@ -28,4 +29,7 @@ Route::get('upload', function () {
     return view('bill.billUpload');
 });
 
+Route::post('authenticate', [LoginController::class ,'authenticate'])->name('authenticate');
+Route::get('login', [LoginController::class ,'index'])->name('login');
+Route::get('logout', [LoginController::class ,'logout'])->name('logout');
 Route::resource('users',UserController::class); 
