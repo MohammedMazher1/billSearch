@@ -24,7 +24,10 @@
                 </div>
                 <div class="formInput">
                     <span>نوع المستخدم</span>
-                    <input type="text" name="type" placeholder="نوع المستخدم">
+                    <select name="type" id="#">
+                        <option value="admin">مدير نظام</option>
+                        <option value="accountant">محاسب</option>
+                    </select>
                 </div>
                 <div class="formInput">
                     <span>اسم المستخدم</span>

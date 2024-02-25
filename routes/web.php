@@ -27,7 +27,6 @@ Route::get('/', function () {
 
 Route::get('search/{id}', [BillController::class,'search'])->name('search');
 Route::middleware('auth')->group(function () {
-
     Route::get('upload', [BillController::class,'upload'])->name('billUpload');
     Route::get('billSearch', [BillController::class,'index'])->name('billSearch');
     route::get('dashbord', function () {
@@ -38,4 +37,7 @@ Route::middleware('auth')->group(function () {
     });
 });
 
-Route::resource('users', UserController::class);
+Route::middleware('admin')->group(function () { 
+    Route::resource('users', UserController::class);
+});
+

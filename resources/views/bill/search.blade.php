@@ -7,9 +7,9 @@
                 <i class="fa-solid fa-rotate"></i>
             </button>
         </div>
-        <div class="errorDiv" id="searchError" style="display: none">
+        <mark id="searchError" style="display: none">
 
-        </div>
+        </mark>
         <table cellspacing=0 id="billTable">
             <tr class="odd tableHeader">
                 <th>رقم الدورة</th>

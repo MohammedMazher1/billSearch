@@ -10,13 +10,14 @@ $('#searchBtn').on('click', function () {
         .then(response => {
             // Check if the request was successful
             if (!response.ok) {
-                $('#searchError').append('<span>ليس هناك فاتورة</span>');
+                $('#searchError').append('ليس هناك فاتورة');
                 $('#searchError').css('display', 'inline-block')
             }
             // Parse the response as JSON
             return response.json();
         })
         .then(data => {
+            $('#searchError').css('display', 'none')
             // Handle the JSON data
             console.log(data.no);
             $('#billTable tr#billRow').remove()

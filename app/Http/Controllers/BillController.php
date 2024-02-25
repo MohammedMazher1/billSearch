@@ -26,7 +26,7 @@ class BillController extends Controller
                 'currAmount'=> '15000.00', 
                 'amount'=>'30000.00' 
             ];
-        }else{
+        }else if($id  == 11){
             $data = [
                 "no"=> '1526341',
                 'contract_No'=>'124',
