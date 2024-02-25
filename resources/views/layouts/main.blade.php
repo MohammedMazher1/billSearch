@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -22,9 +23,20 @@
                     تسجيل الدخول
                 </a>
             @else
-                <a class="loginBtn btn_hover" href="{{ route('logout') }}">
-                    تسجيل الخروج
-                </a>
+                @if (Auth::user()->type == 'admin')
+                    <div class="authAdmin">
+                        <a href="{{ route('users.index') }}">
+                            <i class="fa-solid fa-list"></i>
+                        </a>
+                        <a class="loginBtn btn_hover" href="{{ route('logout') }}">
+                            تسجيل الخروج
+                        </a>
+                    </div>
+                @else
+                    <a class="loginBtn btn_hover" href="{{ route('logout') }}">
+                        تسجيل الخروج
+                    </a>
+                @endif
             @endguest
 
         </div>

@@ -124,7 +124,20 @@ body {
     border: 1px solid var(--main--color) !important;
     cursor: pointer;
 }
-
+.authAdmin{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.authAdmin i{
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+.authAdmin i:hover{
+    color: brown;
+    transform: scale(1.2);
+}
 /*#end Header*/
 main.main {
     height: calc(100vh - 100px);
