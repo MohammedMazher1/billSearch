@@ -25,7 +25,7 @@
             @else
                 @if (Auth::user()->type == 'admin')
                     <div class="authAdmin">
-                        <a href="{{ route('users.index') }}">
+                        <a href="{{ route('dashbord') }}">
                             <i class="fa-solid fa-list"></i>
                         </a>
                         <a class="loginBtn btn_hover" href="{{ route('logout') }}">

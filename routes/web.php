@@ -27,17 +27,17 @@ Route::get('/', function () {
 
 Route::get('search/{id}', [BillController::class,'search'])->name('search');
 Route::middleware('auth')->group(function () {
-    Route::get('upload', [BillController::class,'upload'])->name('billUpload');
+   
     Route::get('billSearch', [BillController::class,'index'])->name('billSearch');
-    route::get('dashbord', function () {
-        return view('admin.dashbord');
-    })->name('dashbord');
-    Route::get('upload', function () {
-        return view('bill.billUpload');
-    });
 });
 
 Route::middleware('admin')->group(function () { 
     Route::resource('users', UserController::class);
+    Route::get('upload', [BillController::class,'upload'])->name('bill.upload');
+    Route::post('bill.store', [BillController::class,'store'])->name('bill.store');
+    route::get('dashbord', function () {
+        return view('admin.dashbord');
+    })->name('dashbord');
+
 });
 
