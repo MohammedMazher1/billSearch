@@ -37,7 +37,7 @@
                     <span>كلمة المرور</span>
                     <input type="password" name="password" placeholder="*********">
                 </div>
-                <div class="control ">
+                <div class="control">
                     <button type="submit" class="btn_hover">
                         إضافة
                     </button>

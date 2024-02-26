@@ -393,15 +393,14 @@ table tr.tableHeader {
     font-size: 14px;
 }
 .userIfo .control {
-    flex-direction: row;
+    display: flex;
+    gap: 10px;
 }
 .userIfo .control button {
     padding: 10px 30px;
-    color: var(--primary-color);
     border-radius: 5px;
     text-decoration: none;
     background-color: var(--main--color);
-    border: none;
     transition: all 0.5s ease;
 }
 .userIfo .control button:last-child {
