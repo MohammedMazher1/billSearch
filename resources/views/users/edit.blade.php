@@ -17,7 +17,6 @@
                 معلومات المستخدم
             </h3>
             <div class="userIfo">
-
                 <div class="formInput">
                     <span>الاسم</span>
                     <input type="text" name="name" value="{{ $user->name }}">
