@@ -45,9 +45,9 @@ $('#searchBtn').on('click', function () {
                                 <td>${data.CONTRACT_NO}</td>
                                 <td>${data.NAME}</td>
                                 <td>${data.P_MONTH}</td>
-                                <td>${data.P_YEAR}</td>
+                                <td>${data.P_YEA}</td>
                                 <td>${data.PREV_BILL_AMOUNT}</td>
-                                <td>${data.CUR_MON_TOT_BIL}</td>
+                                <td>${data.CUR_MON_TOT_BILL}</td>
                                 <td>12000.00</td>
                             </tr>`
                 )
