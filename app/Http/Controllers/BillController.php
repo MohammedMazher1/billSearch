@@ -6,6 +6,7 @@ use App\Imports\BillsImport;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Models\Bill;
+use Illuminate\Support\Facades\DB;
 class BillController extends Controller
 {
     public function index()
@@ -22,29 +23,19 @@ class BillController extends Controller
 
     public function search(string $id)
     {
-        if ($id == 10) {
-            $data = [
-                "no" => '1526341',
-                'contract_No' => '124',
-                'name' => 'محمد مزهر عمر',
-                'preAmount' => '15000.00',
-                'currAmount' => '15000.00',
-                'amount' => '30000.00'
-            ];
-        } else if ($id == 11) {
-            $data = [
-                "no" => '1526341',
-                'contract_No' => '124',
-                'name' => ' إبراهيم غانم ',
-                'preAmount' => '15000.00',
-                'currAmount' => '15000.00',
-                'amount' => '30000.00'
-            ];
+        $bill = Bill::where("CONTRACT_NO", $id)->first();
+        if (!$bill){
+            return response()->json([
+                "status"=> "false",
+                "message"=> "لا توجد فاتورة "
+            ]);
         }
-        return response()->json($data);
+
+        return response()->json($bill);
     }
     public function store(Request $request)
     {
+        Bill::truncate();
         try {
             $request->validate([
                 'file' => 'required|file|mimes:xlsx',

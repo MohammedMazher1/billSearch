@@ -20,12 +20,27 @@
                     <i id="uploadIcon" class="fa-solid fa-cloud-arrow-up"></i>
                     <input id="uploadInput" type="file" name="file" required>
                 </div>
-
+                <section class="confirmDiv">
+                    <p>
+                        سيتم حذف جميع البيانات السابقه من قاعدة البيانات
+                    </p>
+                    <p>
+                        هل انت متاكد ؟
+                    </p>
+                    <div>
+                        <button type="submit">
+                            إرسال
+                        </button>
+                        <button id="cancel">
+                            إلغاء
+                        </button>
+                    </div>
+                </section>
             </div>
             <div>
-                <button type="submit">
+                <a id="billUploadBtn">
                     إرسال
-                </button>
+                </a>
             </div>
         </form>
     </div>
