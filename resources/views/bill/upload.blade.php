@@ -31,9 +31,9 @@
                         <button type="submit">
                             إرسال
                         </button>
-                        <button id="cancel">
+                        <a id="cancel">
                             إلغاء
-                        </button>
+                        </a>
                     </div>
                 </section>
             </div>

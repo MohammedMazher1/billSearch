@@ -335,25 +335,25 @@ table tr.tableHeader {
     font-size: 1rem;
     cursor: pointer;
 }
-.controlpanel div {
+.controlpanel > div {
     padding: 5px 8px;
     border-radius: 2px;
     color: #fff;
     opacity: 0.7;
     transition: all 0.3s ease;
 }
-.controlpanel div a {
+.controlpanel > div a {
     text-decoration: none;
     color: var(--primary-color);
 }
-.controlpanel div:hover {
+.controlpanel > div:hover {
     background-color: var(--main--color);
     opacity: 1;
 }
-.controlpanel div:first-child {
+.controlpanel > div:first-child {
     background-color: brown;
 }
-.controlpanel div:last-child {
+.controlpanel > div:last-child {
     background-color: var(--main--color);
 }
 
